@@ -49,3 +49,4 @@ export default function App() {
     </div>
   )
 }
+/* Deploy trigger vi., 30 de ene. de 2026  1:47:12 */
