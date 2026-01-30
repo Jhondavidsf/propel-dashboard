@@ -282,15 +282,15 @@ export default function PeoplePage({ users, courses, countries, countryFilter, o
         </ChartCard>
 
         <ChartCard title="Top Courses by Enrollment" wide>
-          <ResponsiveContainer width="100%" height={320}>
-            <BarChart data={topCourses} layout="vertical" margin={{ left: 10 }}>
+          <ResponsiveContainer width="100%" height={700}>
+            <BarChart data={topCourses} layout="vertical" margin={{ left: 20, right: 30 }}>
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis type="number" />
-              <YAxis type="category" dataKey="name" width={220} tick={{ fontSize: 11 }} />
+              <XAxis type="number" tick={{ fontSize: 14 }} />
+              <YAxis type="category" dataKey="name" width={280} tick={{ fontSize: 13 }} />
               <Tooltip labelFormatter={label => topCourses.find(c => c.name === label)?.fullName || label} />
-              <Legend />
-              <Bar dataKey="started" fill="#1F4D42" name="Started" />
-              <Bar dataKey="completed" fill="#FF7043" name="Completed" />
+              <Legend wrapperStyle={{ fontSize: 14 }} />
+              <Bar dataKey="started" fill="#1F4D42" name="Started" barSize={20} />
+              <Bar dataKey="completed" fill="#FF7043" name="Completed" barSize={20} />
             </BarChart>
           </ResponsiveContainer>
         </ChartCard>
