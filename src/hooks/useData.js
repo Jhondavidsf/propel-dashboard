@@ -158,7 +158,7 @@ export function groupCoursesByMonth(courses) {
     .map(([month, data]) => ({ month, ...data }))
 }
 
-export function getTopCourses(courses, limit = 10) {
+export function getTopCourses(courses, limit = 25) {
   const grouped = {}
   courses.forEach(c => {
     // Ignorar cursos sin título
