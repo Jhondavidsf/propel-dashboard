@@ -14,7 +14,7 @@ Interactive analytics dashboard for Propel Nonprofit Academy built with React an
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/propel-dashboard.git
+git clone https://github.com/Jhondavidsf/propel-dashboard.git
 cd propel-dashboard
 
 # Install dependencies
