@@ -176,10 +176,13 @@ export default function PeoplePage({ users, courses, countries, countryFilter, o
           <div style={{
             display: 'flex',
             justifyContent: 'center',
-            gap: '24px',
-            marginTop: '12px',
-            fontSize: '0.8rem',
-            fontWeight: '500'
+            gap: '32px',
+            marginTop: '16px',
+            padding: '12px',
+            backgroundColor: '#f8fafc',
+            borderRadius: '8px',
+            fontSize: '0.9rem',
+            fontWeight: '600'
           }}>
             <span style={{ color: '#1F4D42' }}>
               ● Con cursos: {usersWithCoursesEmails.size.toLocaleString()} ({((usersWithCoursesEmails.size / users.length) * 100).toFixed(0)}%)
