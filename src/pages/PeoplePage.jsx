@@ -173,6 +173,21 @@ export default function PeoplePage({ users, courses, countries, countryFilter, o
               />
             </LineChart>
           </ResponsiveContainer>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '24px',
+            marginTop: '12px',
+            fontSize: '0.8rem',
+            fontWeight: '500'
+          }}>
+            <span style={{ color: '#1F4D42' }}>
+              ● Con cursos: {usersWithCoursesEmails.size.toLocaleString()} ({((usersWithCoursesEmails.size / users.length) * 100).toFixed(0)}%)
+            </span>
+            <span style={{ color: '#FF7043' }}>
+              ● Sin cursos: {(users.length - usersWithCoursesEmails.size).toLocaleString()} ({(((users.length - usersWithCoursesEmails.size) / users.length) * 100).toFixed(0)}%)
+            </span>
+          </div>
         </ChartCard>
 
         <ChartCard title="Courses Started vs Completed">
